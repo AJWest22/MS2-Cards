@@ -2,7 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Karma&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
+    height: 100vh;
     background-color: blue;
     overflow-x: hidden;
 }
@@ -44,11 +51,20 @@ p {
     margin-right: 2em;
 }
 
+.game-section {
+    width: 650px;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 img {
-    width: 100px;
+    width: 88px;
 }
 
 .memory-card {
+    width: 25%;
+    height: 33.333%;
     border: 2px solid aqua;
 }
 
