@@ -73,7 +73,7 @@ img {
 .back {
     border: 2px solid red;
     position: absolute;
-    height: 1006%;
+    height: 100%;
     width: 100%;
     padding: 25px;
 }
