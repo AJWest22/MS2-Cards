@@ -8,7 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!flippedCard) {
             hasFlippedCard = true;
             firstCard = this;
+            return;
         }
+
+        secondCard = this;
+        flippedCard = false;
     }
 
     cards.forEach(card => card.addEventListener('click', cardFlip));
