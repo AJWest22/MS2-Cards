@@ -1,0 +1,1 @@
+const cards = document.getElementsByClassName('memory-card')
