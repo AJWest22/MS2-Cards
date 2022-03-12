@@ -65,13 +65,13 @@ img {
 .memory-card {
     width: 25%;
     height: 33.333%;
-    border: 2px solid aqua;
+    border: 2px solid black;
     position: relative;
+    background-color: lightblue;
 }
 
 .front,
 .back {
-    border: 2px solid red;
     position: absolute;
     height: 100%;
     width: 100%;
