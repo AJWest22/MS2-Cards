@@ -1,8 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.memory-card')
+    const cards = document.querySelectorAll('.memory-card');
+    let flippedCard = false;
+    let firstCard, secondCard;
 
     function cardFlip() {
-        this.classList.toggle('cardFlip');
+        this.classList.add('cardFlip');
+        if (!flippedCard) {
+            hasFlippedCard = true;
+            firstCard = this;
+        }
     }
 
     cards.forEach(card => card.addEventListener('click', cardFlip));
