@@ -66,9 +66,14 @@ img {
     width: 25%;
     height: 33.333%;
     border: 2px solid aqua;
+    position: relative;
 }
 
 .front,
 .back {
     border: 2px solid red;
+    position: absolute;
+    height: 1006%;
+    width: 100%;
+    padding: 25px;
 }
