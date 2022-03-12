@@ -18,12 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function checkCards() {
-        if (firstCard.dataset.framework === secondCard.dataset.framework) {
-            match();
-            return;
-        }
-
-        unmatchingCards();
+        let isAMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+        isAMatch ? matchingCards() : unmatchingCards();
     }
 
     function matchingCards() {
