@@ -13,6 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         secondCard = this;
         flippedCard = false;
+
+        checkCards()
+    }
+
+    function checkCards() {
+        if (firstCard.dataset.framework === secondCard.dataset.framework) {
+            match();
+            return;
+        }
     }
 
     cards.forEach(card => card.addEventListener('click', cardFlip));
