@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
             match();
             return;
         }
+
+        unmatchingCards();
     }
 
     function matchingCards() {
@@ -33,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             firstCard.classList.remove('cardFlip');
             secondCard.classList.remove('cardFlip');
-        })
+        }, 1500);
     }
     cards.forEach(card => card.addEventListener('click', cardFlip));
 
