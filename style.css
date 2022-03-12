@@ -89,7 +89,7 @@ img {
     backface-visibility: hidden;
 }
 
-.front-face {
+.front {
     transform: rotateY(180deg);
 }
 
