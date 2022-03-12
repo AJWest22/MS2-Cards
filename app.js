@@ -24,6 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function matchingCards() {
+        firstCard.removeEventListener('click', cardFlip);
+        secondCard.removeEventListener('click', cardFlip)
+    }
+    
     cards.forEach(card => card.addEventListener('click', cardFlip));
 
 })
