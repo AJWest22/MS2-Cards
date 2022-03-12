@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 body {
-    color: white;
+    background-color: blue;
     overflow-x: hidden;
 }
 
@@ -12,13 +12,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 35em;
+    height: 10em;
 }
 
 h1 {
     font-family: Anton;
     font-size: 6rem;
-    color: black;
+    color: white;
 }
 
 .instructions-container {
@@ -32,7 +32,7 @@ h1 {
 
 h2 {
     font-family: Montserrat;
-    color: black;
+    color: white;
     font-size: 2em;
     margin-top: 7em;
 }
@@ -40,7 +40,7 @@ h2 {
 p {
     font-family: Karma;
     font-size: 0.90rem;
-    color: black;
+    color: white;
     text-align: center;
     margin-left: 2em;
     margin-right: 2em;
