@@ -26,8 +26,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4rem;
-    height: 1vh;
 }
 
 h2 {
@@ -48,4 +46,13 @@ p {
 
 img {
     width: 100px;
+}
+
+.memory-card {
+    border: 2px solid aqua;
+}
+
+.front,
+.back {
+    border: 2px solid red;
 }
