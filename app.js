@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         secondCard = this;
+        lockCards = true;
 
         checkCards()
     }
