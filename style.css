@@ -93,6 +93,12 @@ img {
     transform: rotateY(180deg);
 }
 
+.card-title {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
 .cardFlip {
     transform: rotateY(180deg);
 }
