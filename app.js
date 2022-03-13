@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function unmatchingCards() {
-        lockCards = true;
         setTimeout(() => {
             firstCard.classList.remove('cardFlip');
             secondCard.classList.remove('cardFlip');
