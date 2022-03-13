@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.memory-card');
     let flippedCard = false;
     let firstCard, secondCard;
+    let lockCards = false;
 
     function cardFlip() {
         this.classList.add('cardFlip');
@@ -28,9 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function unmatchingCards() {
+        lockCards = true;
         setTimeout(() => {
             firstCard.classList.remove('cardFlip');
             secondCard.classList.remove('cardFlip');
+            lockCards = false;
         }, 1500);
     }
     cards.forEach(card => card.addEventListener('click', cardFlip));
