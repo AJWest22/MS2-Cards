@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function cardFlip() {
         if (lockCards) return;
+        if (this === firstCard) return;
         this.classList.add('cardFlip');
         if (!flippedCard) {
             hasFlippedCard = true;
@@ -14,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         secondCard = this;
-        flippedCard = false;
 
         checkCards()
     }
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             firstCard.classList.remove('cardFlip');
             secondCard.classList.remove('cardFlip');
-            lockCards = false;
+            resetGame();
         }, 1500);
     }
 
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         [hasFlippedCard, lockCards] = [false, false];
         [firstCard, secondCard] = [null, null];
     }
-    
+
     cards.forEach(card => card.addEventListener('click', cardFlip));
 
 })
