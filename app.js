@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (this === firstCard) return;
         this.classList.add('cardFlip');
         if (!flippedCard) {
-            hasFlippedCard = true;
+            flippedCard = true;
             firstCard = this;
             return;
         }
