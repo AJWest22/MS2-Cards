@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let lockCards = false;
 
     function cardFlip() {
+        if (lockCards) return;
         this.classList.add('cardFlip');
         if (!flippedCard) {
             hasFlippedCard = true;
