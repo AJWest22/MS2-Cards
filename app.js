@@ -37,6 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
             lockCards = false;
         }, 1500);
     }
+
+    function resetGame() {
+        [hasFlippedCard, lockCards] = [false, false];
+        [firstCard, secondCard] = [null, null];
+    }
+    
     cards.forEach(card => card.addEventListener('click', cardFlip));
 
 })
