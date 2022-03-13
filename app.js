@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.memory-card');
     let flippedCard = false;
-    let firstCard, secondCard;
     let lockCards = false;
+    let firstCard, secondCard;
 
     function cardFlip() {
         if (lockCards) return;
@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function matchingCards() {
         firstCard.removeEventListener('click', cardFlip);
         secondCard.removeEventListener('click', cardFlip)
+        resetGame();
     }
 
     function unmatchingCards() {
@@ -46,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
     (function shuffleCards() {
         cards.forEach(card => {
             let randomPos = Math.floor(Math.random() * 12);
-            cards.style.order = randomPos;
-        });
+            card.style.order = randomPos;
+      });
     })();
 
     cards.forEach(card => card.addEventListener('click', cardFlip));
