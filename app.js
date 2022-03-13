@@ -43,6 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
         [firstCard, secondCard] = [null, null];
     }
 
+    (function shuffleCards() {
+        cards.forEach(card => {
+            let randomPos = Math.floor(Math.random() * 12);
+            cards.style.order = randomPos;
+        });
+    })();
+
     cards.forEach(card => card.addEventListener('click', cardFlip));
 
 })
