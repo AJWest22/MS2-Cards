@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function resetGame() {
-        [hasFlippedCard, lockCards] = [false, false];
+        [flippedCard, lockCards] = [false, false];
         [firstCard, secondCard] = [null, null];
     }
 
