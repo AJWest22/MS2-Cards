@@ -46,8 +46,14 @@ p {
     font-size: 0.90rem;
     color: black;
     text-align: center;
+    margin-top: 2vh;
     margin-left: 2em;
     margin-right: 2em;
+}
+
+#game-board {
+    margin-left: 400px;
+    margin-top: 5vh;
 }
 
 .game-section {

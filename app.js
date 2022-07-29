@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     const cards = document.querySelectorAll('.memory-card');
     let flippedCard = false;
     let lockCards = false;
