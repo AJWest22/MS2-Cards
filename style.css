@@ -14,6 +14,10 @@ body {
     overflow-x: hidden;
 }
 
+#header {
+    margin-bottom: 100px;
+}
+
 .slideshow {
     max-width: 1000px;
     position: relative;
@@ -46,6 +50,14 @@ h1 {
     color: black;
 }
 
+.game {
+    display: flex;
+}
+
+.game-section {
+    flex: 1;
+}
+
 .instructions-container {
     display: flex;
     flex-direction: column;
@@ -70,17 +82,16 @@ p {
     margin-right: 2em;
 }
 
-#game-board {
-    margin-left: 400px;
-    margin-top: 5vh;
-}
-
 .game-section {
     width: 650px;
     height: 650px;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
+}
+
+#game-board {
+    margin-top: 100px;
 }
 
 img {
