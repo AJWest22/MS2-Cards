@@ -48,6 +48,7 @@ h1 {
 
 .game {
     display: flex;
+    background-color: rgba(0,0,0,0.03);
 }
 
 .game-section {
@@ -59,14 +60,16 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 200px;
     margin-left: 40px;
     margin-right: 40px;
 }
 
 h2 {
-    font-family: Montserrat;
+    font-family: Anton;
     color: black;
     font-size: 2em;
+    padding-top: 2px;
 }
 
 p {
