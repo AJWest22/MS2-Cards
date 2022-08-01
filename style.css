@@ -14,12 +14,17 @@ body {
     overflow-x: hidden;
 }
 
+#header-image {
+    height: 700px;
+}
+
 h1 {
     color: white;
     text-align: center;
     position: absolute;
-    width: 100%;
-    padding: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 6em;
 }
 
@@ -81,9 +86,9 @@ img {
 .memory-card {
     width: 25%;
     height: 33.333%;
-    border: 2px solid black;
+    border: 2px solid white;
     position: relative;
-    background-color: lightblue;
+    background-color: black;
     box-shadow: 1px 1px 0 rgba(0, 0, 0, .4);
     transform: scale(1);
     transform-style: preserve-3d;
