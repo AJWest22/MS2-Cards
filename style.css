@@ -50,6 +50,7 @@ h3 {
     font-size: 2em;
     text-align: center;
     margin-bottom: 1em;
+    letter-spacing: 1px;;
 }
 
 p {
@@ -57,12 +58,18 @@ p {
     font-size: 0.90rem;
     color: black;
     text-align: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    line-height: 2em;
+}
+
+.counter {
+    justify-content: center;
+    padding-top: 30px;
 }
 
 .game-section {
-    width: 650px;
+    width: 750px;
     height: 650px;
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +78,6 @@ p {
 
 #game-board {
     margin-top: 50px;
-    margin-right: 40px;
 }
 
 img {
