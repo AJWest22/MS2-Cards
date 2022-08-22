@@ -29,7 +29,6 @@ h1 {
 }
 
 .game {
-    display: flex;
     background-color: rgba(0,0,0,0.03);
 }
 
@@ -38,15 +37,13 @@ h1 {
 }
 
 .instructions-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 #instruction-text {
-    margin-bottom: 500px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 h3 {
@@ -75,7 +72,6 @@ p {
 }
 
 #game-board {
-    margin-top: 200px;
     margin-right: 40px;
 }
 
@@ -86,9 +82,9 @@ img {
 .memory-card {
     width: 25%;
     height: 33.333%;
-    border: 2px solid white;
+    border: 2px solid black;
     position: relative;
-    background-color: black;
+    background-color: #FFEA00;
     box-shadow: 1px 1px 0 rgba(0, 0, 0, .4);
     transform: scale(1);
     transform-style: preserve-3d;
