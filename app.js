@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const cards = document.querySelectorAll('.memory-card');
-    const tally = document.getElementById('moves-tally');
+    const tally = document.getElementsByClassName('counter');
     let flippedCard = false;
     let lockCards = false;
     let firstCard, secondCard;
@@ -54,5 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
     })();
 
     cards.forEach(card => card.addEventListener('click', cardFlip));
+
+    function movesCounter() {
+        for()
+    }
 
 })

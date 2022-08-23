@@ -50,7 +50,7 @@ h3 {
     font-size: 2em;
     text-align: center;
     margin-bottom: 1em;
-    letter-spacing: 1px;;
+    letter-spacing: 2px;
 }
 
 p {
@@ -89,7 +89,7 @@ img {
     height: 33.333%;
     border: 2px solid black;
     position: relative;
-    background-color: #FFEA00;
+    background-color: #43A6C6;
     box-shadow: 1px 1px 0 rgba(0, 0, 0, .4);
     transform: scale(1);
     transform-style: preserve-3d;
