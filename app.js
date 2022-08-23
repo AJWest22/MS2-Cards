@@ -55,8 +55,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     cards.forEach(card => card.addEventListener('click', cardFlip));
 
-    function movesCounter() {
-        for()
-    }
-
 })
