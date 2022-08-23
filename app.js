@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const cards = document.querySelectorAll('.memory-card');
+    const tally = document.getElementById('moves-tally');
     let flippedCard = false;
     let lockCards = false;
     let firstCard, secondCard;
